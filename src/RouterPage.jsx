@@ -57,6 +57,10 @@ const RouterPage = () => {
     <div>
       <Routes>
         <Route
+          path='/'
+          element={<ListScreen bookList={bookData} setBookData={setBookData} />}
+        />
+        <Route
           path='*'
           element={<ListScreen bookList={bookData} setBookData={setBookData} />}
         />
